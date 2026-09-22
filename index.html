@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Ross 🌸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PANTALLA 1: EL CANDADO -->
+<section id="pantalla-candado" class="pantalla activa">
+    <img src="assets/lirio-marco.png" class="marco-lirios" alt="">
+    <div class="contenido-candado">
+        <h1 class="titulo-candado">Para Ross 🌸</h1>
+        <div class="candado-circulo" id="candado-circulo">
+            <span class="candado-icono" id="candado-icono"></span>
+        </div>
+        <div class="cuenta-regresiva" id="cuenta-regresiva">
+            <div class="unidad-tiempo">
+                <span id="dias">00</span>
+                <small>Días</small>
+            </div>
+            <div class="unidad-tiempo">
+                <span id="horas">00</span>
+                <small>Horas</small>
+            </div>
+            <div class="unidad-tiempo">
+                <span id="minutos">00</span>
+                <small>Min</small>
+            </div>
+            <div class="unidad-tiempo">
+                <span id="segundos">00</span>
+                <small>Seg</small>
+            </div>
+        </div>
+        <p id="mensaje-candado">Toca el candado el día de tu cumpleaños 🌷</p>
+    </div>
+</section>
+
+   <!-- PANTALLA 2: LA CARTA -->
+<section id="pantalla-carta" class="pantalla">
+    <img src="assets/lirio-decoracion-2.png" class="lirio-lado-derecho" alt="">
+ <div class="contenido-carta">
+    <div class="tarjeta-carta">
+        <div class="sobre" id="sobre"><p>Toca para ver 💌</p></div>
+        <div class="carta-texto" id="carta-texto">
+    <p>Hoy no solo celebras un año más, celebras todo lo que has vivido, todo lo que has superado y todo lo hermoso que aún te queda por vivir.</p>
+    <p>¡Feliz cumpleaños, que la vida te sonría siempre!</p>
+    <p class="firma-carta">Te quiero ❤️</p>
+    <button id="btn-siguiente-1">Siguiente →</button>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- PANTALLA 3: GALERÍA DE FOTOS -->
+<section id="pantalla-galeria" class="pantalla">
+    <h2>Te quiero mucho ❤️</h2>
+    <div class="galeria-distribuida">
+        <!-- Posición 1 (Arriba Izquierda) -->
+        <div class="foto-slot slot-1">
+            <img src="assets/ross-1.jpeg" alt="Foto 1">
+        </div>
+
+        <!-- Posición 2 (Abajo Izquierda) -->
+        <div class="foto-slot slot-2">
+            <img src="assets/ross-2.jpeg" alt="Foto 2">
+        </div>
+
+        <!-- Posición 3 (Arriba Derecha) -->
+        <div class="foto-slot slot-3">
+            <img src="assets/ross-3.jpeg" alt="Foto 3">
+        </div>
+
+        <!-- Posición 4 (Abajo Derecha) -->
+        <div class="foto-slot slot-4">
+            <img src="assets/ross-4.jpeg" alt="Foto 4">
+        </div>
+
+        <!-- Posición 5 (Centro) -->
+        <div class="foto-slot slot-5">
+            <img src="assets/perrito.jpg" alt="Perrito">
+        </div>
+    </div>
+    <button id="btn-siguiente-2">Siguiente →</button>
+</section>
+
+    <!-- PANTALLA 4: UNIVERSO CON STICKERS -->
+    <section id="pantalla-lirios" class="pantalla">
+        <canvas id="universo-canvas"></canvas>
+        <div class="luna-lirios"></div>
+        <div class="collage-stickers">
+            <h1 class="texto-feliz-cumple">No te podré dar un universo...<br>pero sí crearte uno pequeño❤️</h1>
+            <img src="assets/sticker-1.jpg" class="sticker" style="top:12%; left:8%; transform: rotate(-12deg);">
+            <img src="assets/sticker-2.jpg" class="sticker" style="top:8%; left:72%; transform: rotate(14deg);">
+            <img src="assets/sticker-3.webp" class="sticker" style="top:38%; left:2%; transform: rotate(8deg);">
+            <img src="assets/sticker-4.webp" class="sticker" style="top:40%; left:80%; transform: rotate(-10deg);">
+            <img src="assets/sticker-5.webp" class="sticker" style="top:70%; left:10%; transform: rotate(10deg);">
+            <img src="assets/sticker-6.webp" class="sticker" style="top:72%; left:76%; transform: rotate(-15deg);">
+            <img src="assets/sticker-7.webp" class="sticker" style="top:2%; left:38%; transform: rotate(-6deg);">
+            <img src="assets/sticker-8.webp" class="sticker" style="top:80%; left:40%; transform: rotate(6deg);">
+            <img src="assets/sticker-9.webp" class="sticker" style="top:20%; left:58%; transform: rotate(9deg);">
+            <img src="assets/sticker-10.webp" class="sticker" style="top:55%; left:22%; transform: rotate(-9deg);">
+            <img src="assets/sticker-11.webp" class="sticker" style="top:58%; left:66%; transform: rotate(11deg);">
+        </div>
+        <button id="btn-siguiente-3">Siguiente →</button>
+    </section>
+
+ <!-- PANTALLA 5: MENSAJE FINAL -->
+<section id="pantalla-final" class="pantalla">
+    <img src="assets/lirio-decoracion-2.png" class="lirios-lateral-izquierdo" alt="Lirios Decorativos">
+
+    <div class="contenido-final">
+        <h1>Feliz Cumpleaños Ross 🎂</h1>
+        <p>17 años</p>
+        <img src="assets/pastel.png" class="imagen-pastel" alt="Pastel de cumpleaños">
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
