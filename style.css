@@ -13,10 +13,15 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 /* ===== SISTEMA DE PANTALLAS ===== */
 .pantalla {
     display: none;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -25,6 +30,7 @@ body {
     padding: 40px 20px;
     animation: aparecer 1s ease;
     position: relative;
+    overflow-y: auto;
 }
 
 .pantalla.activa {
