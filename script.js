@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function obtenerProximoCumple() {
     const ahora = new Date();
     const anio = ahora.getFullYear();
-    let cumple = new Date(anio, 8, 23, 0, 0, 0); // Septiembre = mes 8 (empieza en 0)
+    let cumple = new Date(anio, 8, 23, 23, 59, 59); // Septiembre = mes 8 (empieza en 0)
     if (ahora > cumple) {
-        cumple = new Date(anio + 1, 8, 23, 0, 0, 0);
+        cumple = new Date(anio + 1, 8, 23, 23, 59, 59);
     }
     return cumple;
 }
